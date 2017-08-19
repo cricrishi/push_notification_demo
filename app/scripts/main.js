@@ -49,7 +49,7 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
   console.log('Service Worker and Push is supported');
 
 // do we need to register service worker on every reload.
-  navigator.serviceWorker.register('sw.js')
+  navigator.serviceWorker.register('app/sw.js')
   .then(function(swReg) {
     console.log('Service Worker is registered', swReg);
 
